@@ -101,9 +101,29 @@ url-shortener/
     }
     ```
 
+### Running with Docker
+
+1.  Build the Docker image:
+    ```bash
+    docker build -t url-shortener .
+    ```
+
+2.  Run the container:
+    ```bash
+    docker run -p 8080:8080 url-shortener
+    ```
+
 ## Deployment
 
-This application can be easily deployed to platforms like Railway, Render, or Heroku.
+### Render
+
+This project is configured for easy deployment on [Render](https://render.com).
+
+1.  Sign up at [Render](https://render.com).
+2.  Click **New +** and select **Blueprint**.
+3.  Connect your GitHub account and select this repository.
+4.  Render will automatically detect the `render.yaml` and `Dockerfile`.
+5.  Click **Apply** to deploy.
 
 ### Railway
 
